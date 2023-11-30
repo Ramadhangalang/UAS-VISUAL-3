@@ -11,7 +11,8 @@ type
     MainMenu1: TMainMenu;
     M1: TMenuItem;
     PROFIL1: TMenuItem;
-    LOGOUT1: TMenuItem;
+    STOKBAHAN1: TMenuItem;
+    procedure STOKBAHAN1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -22,7 +23,13 @@ var
   Form2: TForm2;
 
 implementation
+uses Unit3 ;
 
 {$R *.dfm}
+
+procedure TForm2.STOKBAHAN1Click(Sender: TObject);
+begin
+  Form3.show;
+end;
 
 end.

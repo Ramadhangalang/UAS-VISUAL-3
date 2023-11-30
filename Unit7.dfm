@@ -1,6 +1,6 @@
 object Form7: TForm7
-  Left = 419
-  Top = 200
+  Left = 266
+  Top = 192
   Width = 765
   Height = 540
   Caption = 'LAYANAN'
@@ -78,6 +78,7 @@ object Form7: TForm7
     Height = 29
     Caption = 'Baru'
     TabOrder = 0
+    OnClick = btn1Click
   end
   object btn2: TButton
     Left = 154
@@ -86,6 +87,7 @@ object Form7: TForm7
     Height = 33
     Caption = 'Simpan'
     TabOrder = 1
+    OnClick = btn2Click
   end
   object btn3: TButton
     Left = 262
@@ -94,6 +96,7 @@ object Form7: TForm7
     Height = 33
     Caption = 'Edit'
     TabOrder = 2
+    OnClick = btn3Click
   end
   object btn4: TButton
     Left = 362
@@ -102,6 +105,7 @@ object Form7: TForm7
     Height = 33
     Caption = 'Hapus'
     TabOrder = 3
+    OnClick = btn4Click
   end
   object btn5: TButton
     Left = 470
@@ -110,6 +114,7 @@ object Form7: TForm7
     Height = 33
     Caption = 'Batal'
     TabOrder = 4
+    OnClick = btn5Click
   end
   object btn6: TButton
     Left = 574
@@ -118,6 +123,7 @@ object Form7: TForm7
     Height = 33
     Caption = 'Print'
     TabOrder = 5
+    OnClick = btn6Click
   end
   object edt1: TEdit
     Left = 127
@@ -198,8 +204,6 @@ object Form7: TForm7
   end
   object frxReport1: TfrxReport
     Version = '4.12.6'
-    DataSet = frxDBDataset1
-    DataSetName = 'frxDBDataset'
     DotMatrixReport = False
     IniFile = '\Software\Fast Reports'
     PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
@@ -207,7 +211,7 @@ object Form7: TForm7
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 45097.373740509300000000
-    ReportOptions.LastChange = 45259.534798194440000000
+    ReportOptions.LastChange = 45260.846280972220000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
@@ -228,7 +232,7 @@ object Form7: TForm7
     end
     object Page1: TfrxReportPage
       Orientation = poLandscape
-      PaperWidth = 200.000000000000000000
+      PaperWidth = 160.000000000000000000
       PaperHeight = 210.000000000000000000
       PaperSize = 256
       LeftMargin = 10.000000000000000000
@@ -239,11 +243,11 @@ object Form7: TForm7
       object ReportTitle1: TfrxReportTitle
         Height = 41.574830000000000000
         Top = 18.897650000000000000
-        Width = 680.315400000000000000
+        Width = 529.134200000000000000
         object Memo13: TfrxMemoView
-          Left = 147.401670000000000000
+          Left = 124.724490000000000000
           Width = 283.464750000000000000
-          Height = 41.574830000000000000
+          Height = 37.795300000000000000
           ShowHint = False
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
@@ -252,7 +256,7 @@ object Form7: TForm7
           Font.Style = [fsBold]
           HAlign = haCenter
           Memo.UTF8 = (
-            'LAPORAN PETUGAS')
+            'LAPORAN LAYANAN')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -260,7 +264,7 @@ object Form7: TForm7
       object PageHeader1: TfrxPageHeader
         Height = 34.015770000000000000
         Top = 83.149660000000000000
-        Width = 680.315400000000000000
+        Width = 529.134200000000000000
         object Memo1: TfrxMemoView
           Width = 75.590600000000000000
           Height = 34.015770000000000000
@@ -290,13 +294,13 @@ object Form7: TForm7
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            'ID PETUGAS')
+            'ID JENIS')
           ParentFont = False
           VAlign = vaCenter
         end
         object Memo5: TfrxMemoView
           Left = 188.976500000000000000
-          Width = 113.385900000000000000
+          Width = 170.078850000000000000
           Height = 34.015770000000000000
           ShowHint = False
           Font.Charset = DEFAULT_CHARSET
@@ -307,13 +311,13 @@ object Form7: TForm7
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            'NAMA ')
+            'NAMA LAYANAN')
           ParentFont = False
           VAlign = vaCenter
         end
         object Memo7: TfrxMemoView
-          Left = 302.362400000000000000
-          Width = 147.401670000000000000
+          Left = 359.055350000000000000
+          Width = 170.078850000000000000
           Height = 34.015770000000000000
           ShowHint = False
           Font.Charset = DEFAULT_CHARSET
@@ -324,41 +328,7 @@ object Form7: TForm7
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            'ALAMAT')
-          ParentFont = False
-          VAlign = vaCenter
-        end
-        object Memo9: TfrxMemoView
-          Left = 449.764070000000000000
-          Width = 117.165430000000000000
-          Height = 34.015770000000000000
-          ShowHint = False
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -16
-          Font.Name = 'Times New Roman'
-          Font.Style = [fsBold]
-          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
-          HAlign = haCenter
-          Memo.UTF8 = (
-            'NO TELP')
-          ParentFont = False
-          VAlign = vaCenter
-        end
-        object Memo11: TfrxMemoView
-          Left = 566.929500000000000000
-          Width = 113.385900000000000000
-          Height = 34.015770000000000000
-          ShowHint = False
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -16
-          Font.Name = 'Times New Roman'
-          Font.Style = [fsBold]
-          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
-          HAlign = haCenter
-          Memo.UTF8 = (
-            'PASSWORD')
+            'HARGA')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -366,13 +336,13 @@ object Form7: TForm7
       object MasterData1: TfrxMasterData
         Height = 71.811070000000000000
         Top = 177.637910000000000000
-        Width = 680.315400000000000000
+        Width = 529.134200000000000000
         DataSet = frxDBDataset1
         DataSetName = 'frxDBDataset'
         RowCount = 0
         object Memo2: TfrxMemoView
           Width = 75.590600000000000000
-          Height = 71.811070000000000000
+          Height = 49.133890000000000000
           ShowHint = False
           DataField = 'id'
           DataSet = frxDBDataset1
@@ -392,9 +362,9 @@ object Form7: TForm7
         object Memo4: TfrxMemoView
           Left = 75.590600000000000000
           Width = 113.385900000000000000
-          Height = 71.811070000000000000
+          Height = 49.133890000000000000
           ShowHint = False
-          DataField = 'id_petugas'
+          DataField = 'id_jenis'
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset'
           Font.Charset = DEFAULT_CHARSET
@@ -405,16 +375,16 @@ object Form7: TForm7
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            '[frxDBDataset."id_petugas"]')
+            '[frxDBDataset."id_jenis"]')
           ParentFont = False
           VAlign = vaCenter
         end
         object Memo8: TfrxMemoView
-          Left = 302.362400000000000000
-          Width = 147.401670000000000000
-          Height = 71.811070000000000000
+          Left = 359.055350000000000000
+          Width = 170.078850000000000000
+          Height = 49.133890000000000000
           ShowHint = False
-          DataField = 'alamat'
+          DataField = 'harga'
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset'
           Font.Charset = DEFAULT_CHARSET
@@ -425,36 +395,16 @@ object Form7: TForm7
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            '[frxDBDataset."alamat"]')
-          ParentFont = False
-          VAlign = vaCenter
-        end
-        object Memo10: TfrxMemoView
-          Left = 449.764070000000000000
-          Width = 117.165430000000000000
-          Height = 71.811070000000000000
-          ShowHint = False
-          DataField = 'no_telp'
-          DataSet = frxDBDataset1
-          DataSetName = 'frxDBDataset'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -16
-          Font.Name = 'Times New Roman'
-          Font.Style = []
-          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
-          HAlign = haCenter
-          Memo.UTF8 = (
-            '[frxDBDataset."no_telp"]')
+            '[frxDBDataset."harga"]')
           ParentFont = False
           VAlign = vaCenter
         end
         object Memo6: TfrxMemoView
           Left = 188.976500000000000000
-          Width = 113.385900000000000000
-          Height = 71.811070000000000000
+          Width = 170.078850000000000000
+          Height = 49.133890000000000000
           ShowHint = False
-          DataField = 'nama'
+          DataField = 'nama_layanan'
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset'
           Font.Charset = DEFAULT_CHARSET
@@ -465,27 +415,7 @@ object Form7: TForm7
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            '[frxDBDataset."nama"]')
-          ParentFont = False
-          VAlign = vaCenter
-        end
-        object Memo12: TfrxMemoView
-          Left = 566.929500000000000000
-          Width = 113.385900000000000000
-          Height = 71.811070000000000000
-          ShowHint = False
-          DataField = 'password'
-          DataSet = frxDBDataset1
-          DataSetName = 'frxDBDataset'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -16
-          Font.Name = 'Times New Roman'
-          Font.Style = []
-          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
-          HAlign = haCenter
-          Memo.UTF8 = (
-            '[frxDBDataset."password"]')
+            '[frxDBDataset."nama_layanan"]')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -495,7 +425,7 @@ object Form7: TForm7
   object zqry2: TZQuery
     Connection = con1
     SQL.Strings = (
-      'select * from pembeli')
+      'select * layanan')
     Params = <>
     Left = 638
     Top = 147

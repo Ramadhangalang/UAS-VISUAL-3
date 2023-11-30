@@ -1,6 +1,6 @@
 object Form6: TForm6
-  Left = 401
-  Top = 210
+  Left = 369
+  Top = 212
   Width = 809
   Height = 511
   Caption = 'TRANSAKSI'

@@ -132,7 +132,7 @@ begin
 if MessageDlg('APAKAH YAKIN MENGHAPUS DATA INI?',mtWarning,[mbYes,mbNo],0)= mryes then
 begin
 zqry1.SQL.Clear;
-zqry1.SQL.Add(' delete from petugas where id="'+id+'"');
+zqry1.SQL.Add(' delete from pelanggan where id="'+id+'"');
 zqry1. ExecSQL;
 zqry1.SQL.Clear;
 zqry1.SQL.Add('select * from pelanggan');

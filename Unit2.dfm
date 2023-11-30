@@ -15,16 +15,17 @@ object Form2: TForm2
   PixelsPerInch = 96
   TextHeight = 13
   object MainMenu1: TMainMenu
-    Left = 125
-    Top = 65
+    Left = 70
+    Top = 40
     object M1: TMenuItem
       Caption = 'MENU'
+      object STOKBAHAN1: TMenuItem
+        Caption = 'STOK BAHAN'
+        OnClick = STOKBAHAN1Click
+      end
     end
     object PROFIL1: TMenuItem
       Caption = 'PROFIL'
-    end
-    object LOGOUT1: TMenuItem
-      Caption = 'LOGOUT'
     end
   end
 end

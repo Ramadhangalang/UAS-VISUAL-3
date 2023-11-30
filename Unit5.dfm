@@ -1,6 +1,6 @@
 object Form5: TForm5
-  Left = 330
-  Top = 174
+  Left = 329
+  Top = 213
   Width = 756
   Height = 522
   Caption = 'PELANGGAN'
@@ -204,8 +204,6 @@ object Form5: TForm5
   end
   object frxReport1: TfrxReport
     Version = '4.12.6'
-    DataSet = frxDBDataset1
-    DataSetName = 'frxDBDataset'
     DotMatrixReport = False
     IniFile = '\Software\Fast Reports'
     PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
@@ -213,7 +211,7 @@ object Form5: TForm5
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 45097.373740509300000000
-    ReportOptions.LastChange = 45259.565426423610000000
+    ReportOptions.LastChange = 45260.848691215280000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
@@ -234,7 +232,7 @@ object Form5: TForm5
     end
     object Page1: TfrxReportPage
       Orientation = poLandscape
-      PaperWidth = 200.000000000000000000
+      PaperWidth = 140.000000000000000000
       PaperHeight = 210.000000000000000000
       PaperSize = 256
       LeftMargin = 10.000000000000000000
@@ -245,9 +243,9 @@ object Form5: TForm5
       object ReportTitle1: TfrxReportTitle
         Height = 41.574830000000000000
         Top = 18.897650000000000000
-        Width = 680.315400000000000000
+        Width = 453.543600000000000000
         object Memo13: TfrxMemoView
-          Left = 147.401670000000000000
+          Left = 79.370130000000000000
           Width = 283.464750000000000000
           Height = 41.574830000000000000
           ShowHint = False
@@ -266,9 +264,9 @@ object Form5: TForm5
       object PageHeader1: TfrxPageHeader
         Height = 34.015770000000000000
         Top = 83.149660000000000000
-        Width = 680.315400000000000000
+        Width = 453.543600000000000000
         object Memo1: TfrxMemoView
-          Width = 75.590600000000000000
+          Width = 68.031540000000000000
           Height = 34.015770000000000000
           ShowHint = False
           Font.Charset = DEFAULT_CHARSET
@@ -284,7 +282,7 @@ object Form5: TForm5
           VAlign = vaCenter
         end
         object Memo3: TfrxMemoView
-          Left = 75.590600000000000000
+          Left = 68.031540000000000000
           Width = 113.385900000000000000
           Height = 34.015770000000000000
           ShowHint = False
@@ -301,8 +299,8 @@ object Form5: TForm5
           VAlign = vaCenter
         end
         object Memo5: TfrxMemoView
-          Left = 188.976500000000000000
-          Width = 113.385900000000000000
+          Left = 181.417440000000000000
+          Width = 120.944960000000000000
           Height = 34.015770000000000000
           ShowHint = False
           Font.Charset = DEFAULT_CHARSET
@@ -336,15 +334,15 @@ object Form5: TForm5
         end
       end
       object MasterData1: TfrxMasterData
-        Height = 71.811070000000000000
+        Height = 105.826840000000000000
         Top = 177.637910000000000000
-        Width = 680.315400000000000000
+        Width = 453.543600000000000000
         DataSet = frxDBDataset1
         DataSetName = 'frxDBDataset'
         RowCount = 0
         object Memo2: TfrxMemoView
-          Width = 75.590600000000000000
-          Height = 71.811070000000000000
+          Width = 68.031540000000000000
+          Height = 49.133890000000000000
           ShowHint = False
           DataField = 'id'
           DataSet = frxDBDataset1
@@ -362,9 +360,9 @@ object Form5: TForm5
           VAlign = vaCenter
         end
         object Memo4: TfrxMemoView
-          Left = 75.590600000000000000
+          Left = 68.031540000000000000
           Width = 113.385900000000000000
-          Height = 71.811070000000000000
+          Height = 49.133890000000000000
           ShowHint = False
           DataField = 'alamat'
           DataSet = frxDBDataset1
@@ -384,7 +382,7 @@ object Form5: TForm5
         object Memo8: TfrxMemoView
           Left = 302.362400000000000000
           Width = 147.401670000000000000
-          Height = 71.811070000000000000
+          Height = 49.133890000000000000
           ShowHint = False
           DataField = 'no_telp'
           DataSet = frxDBDataset1
@@ -402,9 +400,9 @@ object Form5: TForm5
           VAlign = vaCenter
         end
         object Memo6: TfrxMemoView
-          Left = 188.976500000000000000
-          Width = 113.385900000000000000
-          Height = 71.811070000000000000
+          Left = 181.417440000000000000
+          Width = 120.944960000000000000
+          Height = 49.133890000000000000
           ShowHint = False
           DataField = 'alamat'
           DataSet = frxDBDataset1
@@ -426,7 +424,6 @@ object Form5: TForm5
   end
   object zqry2: TZQuery
     Connection = con1
-    Active = True
     SQL.Strings = (
       'select * from pelanggan')
     Params = <>
