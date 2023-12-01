@@ -211,7 +211,7 @@ object Form5: TForm5
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 45097.373740509300000000
-    ReportOptions.LastChange = 45260.848691215280000000
+    ReportOptions.LastChange = 45261.385916261580000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
@@ -317,7 +317,7 @@ object Form5: TForm5
         end
         object Memo7: TfrxMemoView
           Left = 302.362400000000000000
-          Width = 147.401670000000000000
+          Width = 151.181200000000000000
           Height = 34.015770000000000000
           ShowHint = False
           Font.Charset = DEFAULT_CHARSET
@@ -381,7 +381,7 @@ object Form5: TForm5
         end
         object Memo8: TfrxMemoView
           Left = 302.362400000000000000
-          Width = 147.401670000000000000
+          Width = 151.181200000000000000
           Height = 49.133890000000000000
           ShowHint = False
           DataField = 'no_telp'
@@ -424,6 +424,7 @@ object Form5: TForm5
   end
   object zqry2: TZQuery
     Connection = con1
+    Active = True
     SQL.Strings = (
       'select * from pelanggan')
     Params = <>

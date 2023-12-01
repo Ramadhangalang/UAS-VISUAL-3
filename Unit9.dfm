@@ -185,7 +185,7 @@ object Form9: TForm9
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 45097.373740509300000000
-    ReportOptions.LastChange = 45260.836888171300000000
+    ReportOptions.LastChange = 45261.383738125000000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
@@ -206,7 +206,7 @@ object Form9: TForm9
     end
     object Page1: TfrxReportPage
       Orientation = poLandscape
-      PaperWidth = 200.000000000000000000
+      PaperWidth = 110.000000000000000000
       PaperHeight = 210.000000000000000000
       PaperSize = 256
       LeftMargin = 10.000000000000000000
@@ -217,9 +217,9 @@ object Form9: TForm9
       object ReportTitle1: TfrxReportTitle
         Height = 41.574830000000000000
         Top = 18.897650000000000000
-        Width = 680.315400000000000000
+        Width = 340.157700000000000000
         object Memo13: TfrxMemoView
-          Left = 147.401670000000000000
+          Left = 26.456710000000000000
           Width = 283.464750000000000000
           Height = 41.574830000000000000
           ShowHint = False
@@ -238,7 +238,7 @@ object Form9: TForm9
       object PageHeader1: TfrxPageHeader
         Height = 34.015770000000000000
         Top = 83.149660000000000000
-        Width = 680.315400000000000000
+        Width = 340.157700000000000000
         object Memo1: TfrxMemoView
           Width = 75.590600000000000000
           Height = 34.015770000000000000
@@ -274,7 +274,7 @@ object Form9: TForm9
         end
         object Memo5: TfrxMemoView
           Left = 188.976500000000000000
-          Width = 113.385900000000000000
+          Width = 151.181200000000000000
           Height = 34.015770000000000000
           ShowHint = False
           Font.Charset = DEFAULT_CHARSET
@@ -293,13 +293,13 @@ object Form9: TForm9
       object MasterData1: TfrxMasterData
         Height = 71.811070000000000000
         Top = 177.637910000000000000
-        Width = 680.315400000000000000
+        Width = 340.157700000000000000
         DataSet = frxDBDataset1
         DataSetName = 'frxDBDataset'
         RowCount = 0
         object Memo2: TfrxMemoView
           Width = 75.590600000000000000
-          Height = 49.133890000000000000
+          Height = 41.574830000000000000
           ShowHint = False
           DataField = 'id_jenis'
           DataSet = frxDBDataset1
@@ -319,7 +319,7 @@ object Form9: TForm9
         object Memo4: TfrxMemoView
           Left = 75.590600000000000000
           Width = 113.385900000000000000
-          Height = 49.133890000000000000
+          Height = 41.574830000000000000
           ShowHint = False
           DataField = 'id_jenis'
           DataSet = frxDBDataset1
@@ -338,8 +338,8 @@ object Form9: TForm9
         end
         object Memo6: TfrxMemoView
           Left = 188.976500000000000000
-          Width = 113.385900000000000000
-          Height = 49.133890000000000000
+          Width = 151.181200000000000000
+          Height = 41.574830000000000000
           ShowHint = False
           DataField = 'nama_jenis'
           DataSet = frxDBDataset1

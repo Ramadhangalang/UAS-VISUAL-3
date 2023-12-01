@@ -259,7 +259,7 @@ object Form3: TForm3
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 45097.373740509300000000
-    ReportOptions.LastChange = 45260.850644317130000000
+    ReportOptions.LastChange = 45261.388158750000000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
@@ -382,7 +382,7 @@ object Form3: TForm3
         end
         object Memo9: TfrxMemoView
           Left = 483.779840000000000000
-          Width = 117.165430000000000000
+          Width = 120.944960000000000000
           Height = 34.015770000000000000
           ShowHint = False
           Font.Charset = DEFAULT_CHARSET
@@ -466,7 +466,7 @@ object Form3: TForm3
         end
         object Memo10: TfrxMemoView
           Left = 483.779840000000000000
-          Width = 117.165430000000000000
+          Width = 120.944960000000000000
           Height = 52.913420000000000000
           ShowHint = False
           DataField = 'harga_bahan'

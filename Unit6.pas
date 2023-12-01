@@ -89,32 +89,33 @@ if edt1.Text='' then
     end else
     if edt2.Text=''then
     begin
-     ShowMessage('USER ID PETUGAS BELUM DIISI DENGAN BENAR');
+     ShowMessage('USER ID TRANSAKSI BELUM DIISI DENGAN BENAR');
     end else
     if edt3.text=''then
     begin
-    ShowMessage('NAMA BELUM SESUAI');
+    ShowMessage('ID PELANGGAN BELUM SESUAI');
     end else
      if edt4.text=''then
     begin
-    ShowMessage('ALAMAT BELUM SESUAI');
+    ShowMessage('ID LAYANAN BELUM SESUAI');
     end else
      if edt5.text=''then
     begin
-    ShowMessage('NO TELP BELUM SESUAI');
+    ShowMessage('ID PETUGAS BELUM SESUAI');
     end else
      if edt6.text=''then
     begin
-    ShowMessage('PASSWORD BELUM SESUAI');
+    ShowMessage('STATUS BELUM SESUAI');
     end else
      if edt7.text=''then
     begin
-    ShowMessage('PASSWORD BELUM SESUAI');
+    ShowMessage('JUMLAH BARANG BELUM SESUAI');
     end else
      if edt8.text=''then
     begin
-    ShowMessage('PASSWORD BELUM SESUAI');
+    ShowMessage('TOTAL BELUM SESUAI');
     end else
+
      if Form6.zqry1.Locate('id',edt1.Text,[]) then
   begin
    ShowMessage('DATA SUDAH ADA DALAM SISTEM');
@@ -122,7 +123,7 @@ if edt1.Text='' then
   begin
 
  zqry1.SQL.Clear;
- zqry1.SQL.Add('insert into pembeli values("'+edt1.Text+'","'+edt2.Text+'","'+edt3.Text+'","'+edt4.Text+'","'+edt5.Text+'","'+edt6.Text+'")');
+ zqry1.SQL.Add('insert into pembeli values("'+edt1.Text+'","'+edt2.Text+'","'+edt3.Text+'","'+formatdatetime('yyyy-mm-dd',dtp1.Date)+'","'+edt4.Text+'","'+edt5.Text+'","'+formatdatetime('yyyy-mm-dd',dtp2.Date)+'","'+edt6.Text+'","'+edt7.Text+'","'+formatdatetime('yyyy-mm-dd',dtp3.Date)+'")');
  zqry1.ExecSQL ;
 
  zqry1.SQL.Clear;

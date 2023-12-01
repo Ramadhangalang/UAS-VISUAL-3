@@ -277,8 +277,6 @@ object Form4: TForm4
   end
   object frxReport1: TfrxReport
     Version = '4.12.6'
-    DataSet = frxDBDataset1
-    DataSetName = 'frxDBDataset'
     DotMatrixReport = False
     IniFile = '\Software\Fast Reports'
     PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
@@ -286,7 +284,7 @@ object Form4: TForm4
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 45097.373740509300000000
-    ReportOptions.LastChange = 45259.534798194440000000
+    ReportOptions.LastChange = 45261.387557303200000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
@@ -320,7 +318,7 @@ object Form4: TForm4
         Top = 18.897650000000000000
         Width = 680.315400000000000000
         object Memo13: TfrxMemoView
-          Left = 147.401670000000000000
+          Left = 185.196970000000000000
           Width = 283.464750000000000000
           Height = 41.574830000000000000
           ShowHint = False

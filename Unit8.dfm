@@ -185,7 +185,7 @@ object Form8: TForm8
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 45097.373740509300000000
-    ReportOptions.LastChange = 45260.839651516200000000
+    ReportOptions.LastChange = 45261.385124143520000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
@@ -205,10 +205,9 @@ object Form8: TForm8
       Width = 1000.000000000000000000
     end
     object Page1: TfrxReportPage
-      Orientation = poLandscape
-      PaperWidth = 210.000000000000000000
-      PaperHeight = 148.000000000000000000
-      PaperSize = 11
+      PaperWidth = 110.000000000000000000
+      PaperHeight = 210.000000000000000000
+      PaperSize = 256
       LeftMargin = 10.000000000000000000
       RightMargin = 10.000000000000000000
       TopMargin = 10.000000000000000000
@@ -217,9 +216,9 @@ object Form8: TForm8
       object ReportTitle1: TfrxReportTitle
         Height = 41.574830000000000000
         Top = 18.897650000000000000
-        Width = 718.110700000000000000
+        Width = 340.157700000000000000
         object Memo13: TfrxMemoView
-          Left = 196.535560000000000000
+          Left = 26.456710000000000000
           Width = 283.464750000000000000
           Height = 41.574830000000000000
           ShowHint = False
@@ -238,7 +237,7 @@ object Form8: TForm8
       object PageHeader1: TfrxPageHeader
         Height = 34.015770000000000000
         Top = 83.149660000000000000
-        Width = 718.110700000000000000
+        Width = 340.157700000000000000
         object Memo1: TfrxMemoView
           Width = 75.590600000000000000
           Height = 34.015770000000000000
@@ -274,7 +273,7 @@ object Form8: TForm8
         end
         object Memo5: TfrxMemoView
           Left = 188.976500000000000000
-          Width = 113.385900000000000000
+          Width = 151.181200000000000000
           Height = 34.015770000000000000
           ShowHint = False
           Font.Charset = DEFAULT_CHARSET
@@ -293,7 +292,7 @@ object Form8: TForm8
       object MasterData1: TfrxMasterData
         Height = 49.133890000000000000
         Top = 177.637910000000000000
-        Width = 718.110700000000000000
+        Width = 340.157700000000000000
         DataSet = frxDBDataset1
         DataSetName = 'frxDBDataset'
         RowCount = 0
@@ -338,7 +337,7 @@ object Form8: TForm8
         end
         object Memo6: TfrxMemoView
           Left = 188.976500000000000000
-          Width = 113.385900000000000000
+          Width = 151.181200000000000000
           Height = 49.133890000000000000
           ShowHint = False
           DataField = 'kategori'
